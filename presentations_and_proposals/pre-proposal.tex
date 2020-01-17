@@ -1,0 +1,56 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{ds4900-sp20-SteveSetteducatiJr}
+\author{stevesetteducatijr }
+\date{January 2020}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+Steve Setteducati Jr.
+DS 4900 Project Pre-Proposal
+\subsection{Uses of Spark}
+\begin{enumerate}
+    \item Streaming Data
+    \begin{enumerate}
+        \item Social Media data
+        \item Clickstream data
+        \item Internet of Things data
+        \item Sensors
+        \item Web logs
+    \end{enumerate}
+    \item Realtime Analysis
+    \begin{enumerate}
+        \item Adjusting predictions and reports as new data comes in, rather than a corpus of large data sets. This still requires a large data set to train on and predictions are made in real time with Spark Streaming.
+    \end{enumerate}
+\end{enumerate}
+    
+\subsection{Project Idea}
+\begin{enumerate}
+    \item Reddit live threads
+    \begin{enumerate}
+        \item Reddit supports the ability to stream live updates to their platform
+        \item This includes the ability to manage a thread as well as the ability to retrieve discussions on the thread
+    \end{enumerate}
+    \item Analysis on Reddit Threads
+    \begin{enumerate}
+        \item Analysis could be done on the content of a thread, allowing a user of the project to get insights into the type of message being posted on a thread
+        \item One could see tags on what the post entails
+        \item A relevance score as to if the post will be useful, prior to waiting for a number of likes to help determine that since it is live
+    \end{enumerate}
+    \item A Live Dashboard
+    \begin{enumerate}
+        \item The end product could be some sort of webhosted dashboard with information on a given subreddit
+        \item This tool could be used to help give a user insight into reddit posts and see what is relevant faster than reading every post that comes in
+        \item Might be useful for companies whose products have a subreddit and therefore have employees working on community relations through them
+    \end{enumerate}
+\end{enumerate}
+
+\subsection{Proposal}
+By leveraging spark to handle constant streaming data, and live APIs from reddit, I could create a live dashboard running analysis without latency on different subreddits. This dashboard could be used by companies with their own dedicated consumer relations teams to gain faster insight into what people are saying on their forums and help to maneuver complaints, requests, and nonsensical postings more easily. The dashboard would be powered by live classification and NLP models to provide a user with the analytics they want before having to read any post.
+
+\end{document}
+
