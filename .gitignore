@@ -1,1 +1,4 @@
 learning_spark/publications*
+*/sentiment140dataset*
+*/.ipynb_checkpoints/*
+*/.idea/*
