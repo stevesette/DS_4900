@@ -16,8 +16,10 @@ except ValueError:
 data = sc.textFile("spark_sample_data/sample_lda_data.txt")
 
 parsedData = data.map(lambda line: Vectors.dense([float(x) for x in line.strip().split(' ')]))
+
 # Index documents with unique IDs
 corpus = parsedData.zipWithIndex().map(lambda x: [x[1], x[0]]).cache()
+print(corpus.take(10))
 
 # Cluster the documents into three topics using LDA
 ldaModel = LDA.train(corpus, k=3, optimizer='online')
